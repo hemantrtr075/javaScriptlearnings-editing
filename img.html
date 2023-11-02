@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="refresh" content="10" >
+    <style>
+       body {
+               
+            background-color:#414141;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="https://images.pexels.com/photos/4256640/pexels-photo-4256640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="no image " width="200px"> -->
+
+    <img src="/images/elephat.jpeg" alt="no image " width="200px" >
+
+    <picture>
+       <source media="(min-width : 650px)" srcset="/images/lon.jpg  " alt="no image">
+       <source media="(min-width : 500px)" srcset="/images/elephat.jpeg  " alt ="no image">
+       <img src="/images/lio.jpg" alt="no image" width="200px">
+    </picture>
+
+    <!-- an image map generator -->
+
+    <img src="/images/elephant.jpeg" usemap="#image-map">
+
+<map name="image-map">
+    <area  onclick="two()" target="" alt=""
+     title="click me to see the elephant" href="" coords="113,103,27,21" shape="rect"  >
+    <area title="clike me to see the tree" onclick="one()" target="" alt=""  href="" coords="150,32,178,60" shape="rect">
+</map>
+<script>
+    function one(){
+       alert("you clicked on tree");
+    }
+    function two(){
+        alert("you clicked on elephant");
+    }
+</script>
+
+</body>
+</html>

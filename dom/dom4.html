@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2";>
+    <title>4th document</title>
+</head>
+<body style="background-color: #313131;
+  color: white;">
+
+   <ul class ="language">
+    <li>javascript</li>
+   </ul>
+
+    
+</body>
+ <script>
+    function addLanguage(langName){
+        const list = document.createElement('li');
+        list.innerHTML =`${langName}`;
+        document.querySelector('.language').appendChild(list);
+
+    }
+    addLanguage("python");
+    addLanguage("typeScript");
+
+    function addOptilanguage(langName){
+        const list = document.createElement('li');
+        list.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(list); 
+
+    }
+    addOptilanguage("golang");
+
+    //edit
+    const secondLang = document.querySelector("li:nth-child(2)");
+    console.log(secondLang);
+    // secondLang.innerHTML= "mojo";
+    const newList = document.createElement('li');
+    newList.textContent ="Mojo";
+    console.log(newList)
+    secondLang.replaceWith(newList);
+    
+
+    // edit 
+    const firstLang = document.querySelector("li:first-child");
+    console.log(firstLang);
+    firstLang.outerHTML ="ypescript"
+
+    // remove 
+    const lastLang = document.querySelector("li:last-child");
+    //lastLang.remove();
+    lastLang.appendChild(firstLang).appendChild(newList);
+
+ </script>
+</html>

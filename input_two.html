@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: #414141;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    
+    <h1 title="normal form">Forms in HTML</h1>
+    <form action="url" method="get" 
+    accept-charset="UTF-8" autocomplete="on"
+    enctype="" autocapitalize="onclick">
+
+    <label title="first name" for="fname">First Name</label><br>
+    <input  title="please enter first name"  type="text" name="" id="fname" placeholder="first name" required > <br>
+
+    <label for="lname">Last Name</label><br>
+    <input title="please enter last name" type="text" name="" id="lname"placeholder="last name"> <br>
+
+    <label for="Email">Email</label><br>
+    <input title="please enter email" type="text" name="" id="Email" placeholder="Email"
+     value="sanju"> 
+    <input type="week" name="" id="">
+    <input type="password" name="" id="">
+    <input type="reset" value="reset">
+    <br><br>
+
+    <select name="editors" id=""multiple>
+        <option value="vscode">vscode</option>
+        <option value="sublime">sublime</option>
+    </select><br>
+
+    <div>
+     <input type="checkbox" name="scales" id="scale">
+     <label for="scale"> i agree to all terms and condition</label> <br>
+     <input type="checkbox" name="scales" id="scales">
+     <label for="scales"> no i don't agree to all terms and condition</label><br><br>
+    </div>
+
+     <div style="background-color: black;">
+     <label title="please upload your photo" for="avatar">Upload a photo</label>
+     <input type="file" name="" id="avatar">
+     </div><br>
+      
+     <div style="background-color: #313131;">
+      <p><b>Audio setting:</b</p><br> 
+      <input title="base" type="range" name="" id="base">
+      <label  for="base">Base</label> <br> 
+      <input title="volume" type="range" name="" id="volume">
+      <label for="volume">Volume</label>  
+     </div>
+
+    <br><br>
+    <button style="border: solid black;  border-radius : 10px;" title="click here to submit" type="submit">submit</button>
+
+    <button style="border: solid black;" title="click here to reset" type="reset">reset</button>
+
+
+    </form>
+</body>
+</html>
